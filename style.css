@@ -1,0 +1,159 @@
+/*************COLORS
+grey: #B3B8CD;
+yellow: #febb0b;
+*/
+:root {
+  --violet: #37294b;
+  --mtop: 2.5rem;
+  --ptop: 2.5rem;
+  --pbottom: 1.5rem;
+  --w32: 28rem;
+  --h32: 32rem;
+  --50p: 50%;
+}
+/****************************ELEMENTS*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--violet);
+  font-family: Poppins, sans-serif;
+}
+section {
+  width: var(--w32);
+  top: var(--50p);
+  right: var(--50p);
+  transform: translate(50%, -50%);
+  position: absolute;
+  box-shadow: 0 10px 20px -10px #090909;
+}
+ul {
+  list-style: none;
+}
+/****************************CONTAINER*/
+.personal-info {
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: var(--ptop) 0 var(--pbottom) 0;
+  background-color: #1f2542;
+}
+/****************************IMAGE*/
+#pro {
+  padding: 0.1rem 0.6rem;
+  border-radius: 0.2rem;
+  background-color: #febb0b;
+  position: absolute;
+  top: 1.4rem;
+  left: 1.4rem;
+}
+.pic {
+  display: block;
+  margin: auto;
+  width: 8rem;
+  border-radius: 50%;
+  border: 0.2rem solid #3dd4d4;
+}
+/****************************NAME-COUNTRY*/
+.name-country h1 {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #b3b8cd;
+  font-size: 1.2rem;
+}
+.name-country p {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #b3b8cd;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+}
+/****************************FULL-STACK*/
+.full-stack {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #b3b8cd;
+  margin-top: var(--mtop);
+  border-radius: 0.2rem;
+  text-transform: capitalize;
+}
+/****************************MESSAGE*/
+.mes-box {
+  display: block;
+  text-align: center;
+  margin-top: calc(var(--mtop) * 1);
+}
+.mes-box button {
+  display: inline-block;
+  border-radius: 0.4rem;
+  letter-spacing: -0.019rem;
+}
+.mes-box #mes,
+.mes-box #fol {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 0.01rem solid #3dd4d4;
+}
+.mes-box #mes {
+  margin-right: 0.5rem;
+  color: #1f2542;
+  background-color: #3dd4d4;
+}
+.mes-box #fol {
+  color: #3dd4d4;
+  margin-left: 0.5rem;
+  background-color: transparent;
+}
+/****************************ICONS*/
+.icons {
+  display: block;
+  color: #b3b8cd;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: calc(var(--mtop) * 0.6);
+}
+.icons li {
+  display: inline-block;
+  text-decoration: none;
+}
+.icons li::before {
+  content: "";
+  margin: 0.2rem;
+}
+.icons a {
+  color: inherit;
+}
+/****************************SKILLS*/
+.skills-container {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  background-color: #1a1a35;
+  border-radius: 0rem 0 0.5rem 0.5rem;
+  padding: 1rem;
+}
+.skills-txt {
+  display: block;
+  color: #b3b8cd;
+  justify-self: left;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+}
+.langs {
+  margin-top: 0.2rem;
+  padding-bottom: var(--pbottom);
+  width: 27rem;
+  height: auto;
+}
+.skills-container .langs p {
+  display: inline-block;
+  padding: 0.2rem 1.5rem;
+  margin-bottom: 0.6rem;
+  border: 0.12rem solid #1f2542;
+  color: #b3b8cd;
+  border-radius: 1rem 0 1rem 0;
+}
